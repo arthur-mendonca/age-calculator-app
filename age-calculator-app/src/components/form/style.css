@@ -1,0 +1,51 @@
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-top: 2rem;
+}
+
+.inputs_wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media only screen and (max-width: 375px) {
+    /* Mobile styles */
+
+    .button_wrapper{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: relative;
+    }
+
+    button{
+        border-radius: 50%;
+        border: none;
+        background-color: var(--purple);
+        padding: 0.5rem;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 60px;
+        height: 60px;
+    }
+
+    button img {
+        width: 25px;
+        height: 25px;
+    }
+
+    span{
+        width: 16rem;
+        height: 2px;
+        background-color: var(--light-grey);
+        z-index: 0;
+        transform: translate(12%);
+    }
+}

@@ -1,0 +1,70 @@
+.input_container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+fieldset{
+    border: none;
+}
+
+.input_container input{
+    width: 10rem;
+    border-radius: 10px;
+    border: solid lightgray 1px;
+}
+
+.input_container input:hover{
+    border-color:  var(--purple);
+}
+
+.input_container input:focus{
+    border-color:  var(--purple);
+    outline: none;
+}
+
+.input_container input::placeholder{
+    opacity: 0.7;
+}
+
+.input_container label{
+    font-weight: 700;
+    color: var(--smokey-grey);
+ }
+
+
+@media only screen and (max-width: 375px) {
+    /* Mobile styles */
+ 
+    .inputs_wrapper{
+        gap: 1rem;
+        
+    }
+    
+    .input_container input{
+        width: 5rem;
+        height: 3rem;
+        
+        
+        
+        padding-left: 10px;
+        font-size: 16px;
+        font-weight: 700;
+     }
+
+    .input_container label{
+       font-size: 12px;
+       letter-spacing: 3px;
+       
+       
+       
+    }
+
+    .input_container input::placeholder{
+    font-size: 16px;
+    
+    
+    }
+   
+
+}

@@ -1,0 +1,39 @@
+
+.container{
+    margin: 0 auto;
+    border-radius: 30px 30px 140px 30px;
+
+    background-color: var(--off-white);
+    width: 43rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media only screen and (max-width: 750px){
+    .container{
+ 
+        margin: 0 1.5rem;
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+    /* Mobile styles */
+ 
+    .container{
+       
+        background-color: var(--off-white);
+        width: 21rem;
+
+
+        border-radius: 30px 30px 140px 30px;
+
+        align-items: center;
+
+        gap: 4rem;
+
+    }
+
+}

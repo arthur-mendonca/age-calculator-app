@@ -1,0 +1,21 @@
+.results_container{
+    /* padding-top: 1rem; */
+}
+
+.numbers_wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    text-align: left;
+}
+
+.numbers_wrapper p{
+    font-style: italic;
+    font-weight: 800;
+    font-size: 3.5rem;
+}
+
+
+.numbers_wrapper p:first-child{
+    color: var(--purple);
+}

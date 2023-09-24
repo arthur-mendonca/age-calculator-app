@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+  height: 100%;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  /* Primary Colors */
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+
+  /* Neutral Colors */
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+/* Typography */
+
+/* Body Copy */
+input, textarea {
+  font-size: 32px;
+}
+
+/* Font Weights */
+.font-italic {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-bold-italic {
+  font-style: italic;
+  font-weight: 800;
+}
