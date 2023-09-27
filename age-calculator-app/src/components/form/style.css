@@ -10,6 +10,34 @@ form{
     flex-direction: row;
 }
 
+.button_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+}
+
+button{
+    border-radius: 50%;
+    border: none;
+    background-color: var(--purple);
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 1;
+    transform: translate(-50%);
+   
+}
+
+span{
+    width: 28rem;
+    height: 2px;
+    background-color: var(--light-grey);
+    z-index: 0;
+    transform: translate(-10%);
+}
+
 
 @media only screen and (max-width: 375px) {
     /* Mobile styles */
@@ -22,16 +50,12 @@ form{
     }
 
     button{
-        border-radius: 50%;
-        border: none;
-        background-color: var(--purple);
-        padding: 0.5rem;
-        position: absolute;
-        z-index: 1;
+       
+        /* position: absolute;
+        z-index: 1; */
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
         width: 60px;
         height: 60px;
     }

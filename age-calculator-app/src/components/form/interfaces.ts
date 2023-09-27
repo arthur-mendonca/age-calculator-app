@@ -6,6 +6,9 @@ export interface InputsProps {
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   label: string;
+  register: string;
+  type: string;
+  errors: string;
 }
 
 export interface FormProps {
@@ -16,8 +19,8 @@ export interface FormProps {
   setDay: Dispatch<SetStateAction<string>>;
   setMonth: Dispatch<SetStateAction<string>>;
   setYear: Dispatch<SetStateAction<string>>;
-  setResult: Dispatch<SetStateAction<DateDifferenceProps>>;
-  dateDifference: DateDifference;
+  setResult: Dispatch<SetStateAction<DateDifferenceProps> | null>;
+  dateDifference: (inputDateStr: string) => DateDifferenceProps;
 }
 
 export interface iUseFormProps {

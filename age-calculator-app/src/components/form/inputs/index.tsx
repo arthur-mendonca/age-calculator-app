@@ -21,7 +21,7 @@ export const Input: FC<InputsProps> = ({
         {...register}
         onChange={onChange}
       />
-      {errors && <p className="error">{errors.message}</p>}
+      {errors && <p className="error font-italic">{errors.message}</p>}
     </fieldset>
   );
 };

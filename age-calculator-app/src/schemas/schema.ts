@@ -3,6 +3,7 @@ import { z } from "zod";
 export const dateSchema = z.object({
   day: z
     .string()
+    .nonempty("This field is required")
     .regex(/^\d{1,2}$/)
     .refine((value) => {
       const day = parseInt(value);
@@ -10,6 +11,7 @@ export const dateSchema = z.object({
     }, "Must be a valid day"),
   month: z
     .string()
+    .nonempty("This field is required")
     .regex(/^\d{1,2}$/)
     .refine((value) => {
       const month = parseInt(value);
@@ -17,6 +19,7 @@ export const dateSchema = z.object({
     }, "Must be a valid month"),
   year: z
     .string()
+    .nonempty("This field is required")
     .regex(/^\d{4}$/)
     .refine((value) => {
       const year = parseInt(value);

@@ -14,6 +14,7 @@ export const Form: React.FC<FormProps> = ({
   setMonth,
   setYear,
   dateDifference,
+  setResult,
 }) => {
   const {
     register,
@@ -25,8 +26,8 @@ export const Form: React.FC<FormProps> = ({
     const result = dateDifference(
       data.day + "/" + data.month + "/" + data.year
     );
-    console.log(data);
-    return result;
+
+    setResult(result);
   };
 
   return (
