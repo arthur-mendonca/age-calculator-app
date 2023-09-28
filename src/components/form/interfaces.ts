@@ -6,13 +6,12 @@ export interface InputsProps {
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   label: string;
-  register: string;
+  register: UseFormRegisterReturn<string>;
   type: string;
-  errors: string;
+  errors: FieldError | undefined;
 }
 
 export interface FormProps {
-  ref: Ref<HTMLInputElement>;
   day: string;
   month: string;
   year: string;

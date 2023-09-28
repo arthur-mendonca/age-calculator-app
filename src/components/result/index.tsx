@@ -8,15 +8,15 @@ export const ResultContainer: FC<ResultsProps> = ({ dateDifference }) => {
   return (
     <div className="results_container">
       <div className="numbers_wrapper" key="year">
-        <p animate={{ opacity: 1 }}>{year}</p>
+        {month ? <p>{year} </p> : <p id="result_placeholder"> -- </p>}
         <p>years</p>
       </div>
       <div className="numbers_wrapper" key="month">
-        <p animate={{ opacity: 1 }}>{month}</p>
+        {month ? <p>{month} </p> : <p id="result_placeholder"> -- </p>}
         <p>months</p>
       </div>
       <div className="numbers_wrapper" key="day">
-        <p animate={{ opacity: 1 }}>{day}</p>
+        {month ? <p>{day} </p> : <p id="result_placeholder"> -- </p>}
         <p>days</p>
       </div>
     </div>
