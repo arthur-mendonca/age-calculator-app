@@ -64,7 +64,6 @@ export const Form: React.FC<FormProps> = ({
           setError={setError}
         />
       </div>
-      {/* {errors[""] && <p className="error">{errors[""].message}</p>} */}
       <div className="button_wrapper">
         <Button />
       </div>
