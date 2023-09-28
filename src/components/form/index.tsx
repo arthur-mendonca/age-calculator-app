@@ -27,9 +27,11 @@ export const Form: React.FC<FormProps> = ({
     const result = dateDifference(
       data.day + "/" + data.month + "/" + data.year
     );
+    console.log("split values", data.day, data.month, data.year);
     setResult(result);
+    console.log("Calculated result:", result);
   };
-
+  console.log(errors);
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className="inputs_wrapper">

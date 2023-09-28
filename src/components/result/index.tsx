@@ -7,16 +7,21 @@ export const ResultContainer: FC<ResultsProps> = ({ dateDifference }) => {
 
   return (
     <div className="results_container">
+      {console.log("DateDifference: ", dateDifference)}
       <div className="numbers_wrapper" key="year">
-        {month ? <p>{year} </p> : <p id="result_placeholder"> -- </p>}
+        {year ? <p>{year} </p> : <p id="result_placeholder"> -- </p>}
         <p>years</p>
       </div>
       <div className="numbers_wrapper" key="month">
-        {month ? <p>{month} </p> : <p id="result_placeholder"> -- </p>}
+        {month !== null && month !== undefined ? (
+          <p>{month} </p>
+        ) : (
+          <p id="result_placeholder"> -- </p>
+        )}
         <p>months</p>
       </div>
       <div className="numbers_wrapper" key="day">
-        {month ? <p>{day} </p> : <p id="result_placeholder"> -- </p>}
+        {day ? <p>{day} </p> : <p id="result_placeholder"> -- </p>}
         <p>days</p>
       </div>
     </div>
