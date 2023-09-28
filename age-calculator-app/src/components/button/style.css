@@ -1,7 +1,8 @@
 
 button:hover{
-    transform: translate(-50%, -50%) scale(1.2);
-    transition: 0.2s ease;
+    /* transform: translate(-50%, -50%) scale(1.2); */
+    transition: 0.2s ease; 
+    background-color: var(--off-black);
 }
 
 @media only screen and (max-width: 375px) {

@@ -13,13 +13,16 @@ export const Input: FC<InputsProps> = ({
 }) => {
   return (
     <fieldset className="input_container">
-      <label htmlFor={placeholder}>{label}</label>
+      <label htmlFor={placeholder} className={errors ? "error" : ""}>
+        {label}
+      </label>
       <input
         type={type}
         placeholder={placeholder}
         value={value}
         {...register}
         onChange={onChange}
+        id={placeholder}
       />
       {errors && <p className="error font-italic">{errors.message}</p>}
     </fieldset>

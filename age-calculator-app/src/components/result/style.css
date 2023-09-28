@@ -1,5 +1,13 @@
 .results_container{
-    /* padding-top: 1rem; */
+    /* display: flex;
+    flex-direction: column;
+    gap: 0;
+    height: 200px; */
+
+    display: grid;
+    grid-template-columns: 1fr;  
+    grid-gap: 0.05rem;  
+
 }
 
 .numbers_wrapper{
@@ -7,15 +15,45 @@
     flex-direction: row;
     gap: 0.5rem;
     text-align: left;
+    justify-content: flex-start;
+    margin-left: 3rem;
+    position: relative;
+    top: 10px;
 }
 
 .numbers_wrapper p{
     font-style: italic;
     font-weight: 800;
-    font-size: 3.5rem;
+    font-size: 6rem;
+    margin: -20px 0px;
 }
 
 
 .numbers_wrapper p:first-child{
     color: var(--purple);
+}
+
+
+@media only screen and (max-width: 375px) {
+    .numbers_wrapper{
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        text-align: left;
+        left: -13px;
+        top: -14px;
+    }
+    
+    .numbers_wrapper p{
+        font-style: italic;
+        font-weight: 800;
+        font-size: 3.5rem;
+        margin: -10px 0;
+    }
+    
+    
+    .numbers_wrapper p:first-child{
+        color: var(--purple);
+    }
+
 }

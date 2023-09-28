@@ -22,11 +22,11 @@ export const Form: React.FC<FormProps> = ({
     formState: { errors },
   } = useForm<iUseFormProps>({ resolver: zodResolver(dateSchema) });
 
-  const onSubmit = (data: DateDifferenceProps) => {
+  const onSubmit = (data: DateDifferenceProps, error: any) => {
     const result = dateDifference(
       data.day + "/" + data.month + "/" + data.year
     );
-
+    console.log(error);
     setResult(result);
   };
 
@@ -58,7 +58,7 @@ export const Form: React.FC<FormProps> = ({
           register={register("year")}
           type="year"
           errors={errors.year}
-          onChange={(e) => setYear(e.target.value)}
+          onChange={(e) => setYear(e.target.value, errors)}
         />
       </div>
       <div className="button_wrapper">

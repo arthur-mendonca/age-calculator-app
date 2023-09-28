@@ -8,10 +8,23 @@ fieldset{
     border: none;
 }
 
+.inputs_wrapper{
+    margin-left: 2.4rem;
+    gap: 2rem;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+}
+
 .input_container input{
     width: 10rem;
     border-radius: 10px;
     border: solid lightgray 1px;
+    padding-left: 1rem;
+    font-weight: 700;
+    background-color: var(--off-white);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
 }
 
 .input_container input:hover{
@@ -28,6 +41,7 @@ fieldset{
 }
 
 .input_container label{
+    font-size: 14px;
     font-weight: 700;
     color: var(--smokey-grey);
  }
@@ -43,6 +57,7 @@ fieldset{
     /* Mobile styles */
  
     .inputs_wrapper{
+        margin-left: 0rem;
         gap: 0.5rem;
         max-width: min-content;
         

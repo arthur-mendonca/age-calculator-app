@@ -27,11 +27,10 @@
         background-color: var(--off-white);
         width: 21rem;
 
-
-        border-radius: 30px 30px 140px 30px;
+        border-radius: 30px 30px 120px 30px;
 
         align-items: center;
-
+        height: 30rem;
         gap: 4rem;
 
     }

@@ -4,6 +4,7 @@ export const dateSchema = z.object({
   day: z
     .string()
     .nonempty("This field is required")
+    .max(2, "Max of 2 characters")
     .regex(/^\d{1,2}$/)
     .refine((value) => {
       const day = parseInt(value);
@@ -12,6 +13,7 @@ export const dateSchema = z.object({
   month: z
     .string()
     .nonempty("This field is required")
+    .max(2, "Max of 2 characters")
     .regex(/^\d{1,2}$/)
     .refine((value) => {
       const month = parseInt(value);
@@ -20,6 +22,7 @@ export const dateSchema = z.object({
   year: z
     .string()
     .nonempty("This field is required")
+    .max(4, "Max of 4 characters")
     .regex(/^\d{4}$/)
     .refine((value) => {
       const year = parseInt(value);

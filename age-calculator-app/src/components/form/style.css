@@ -5,10 +5,6 @@ form{
     padding-top: 2rem;
 }
 
-.inputs_wrapper{
-    display: flex;
-    flex-direction: row;
-}
 
 .button_wrapper{
     display: flex;
@@ -17,6 +13,7 @@ form{
     width: 100%;
     position: relative;
     justify-content: center;
+    top: -16px;
 }
 
 button{
@@ -31,11 +28,12 @@ button{
 }
 
 span{
-    width: 28rem;
+    width: 37rem;
     height: 2px;
     background-color: var(--light-grey);
     z-index: 0;
     transform: translate(-10%);
+    max-width: 85%;
 }
 
 
