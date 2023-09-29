@@ -13,11 +13,8 @@ export const ResultContainer: FC<ResultsProps> = ({ dateDifference }) => {
         <p>years</p>
       </div>
       <div className="numbers_wrapper" key="month">
-        {month !== null && month !== undefined ? (
-          <p>{month} </p>
-        ) : (
-          <p id="result_placeholder"> -- </p>
-        )}
+        {month ? <p>{month} </p> : <p id="result_placeholder"> -- </p>}
+
         <p>months</p>
       </div>
       <div className="numbers_wrapper" key="day">
