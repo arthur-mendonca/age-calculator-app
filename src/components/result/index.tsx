@@ -7,7 +7,6 @@ export const ResultContainer: FC<ResultsProps> = ({ dateDifference }) => {
 
   return (
     <div className="results_container">
-      {console.log("DateDifference: ", dateDifference)}
       <div className="numbers_wrapper" key="year">
         {year ? <p>{year} </p> : <p id="result_placeholder"> -- </p>}
         <p>years</p>

@@ -26,13 +26,10 @@ export const Container: React.FC = () => {
     const currentDate = new Date();
 
     const rawDifference = differenceInMonths(currentDate, inputDate);
-    console.log("raw difference", rawDifference);
 
     const yearDifference = differenceInYears(currentDate, inputDate);
     const monthDifference = rawDifference % 12;
-    console.log("calculated month difference", monthDifference);
 
-    console.log("month difference", monthDifference);
     const advancedDate = new Date(inputDate);
     advancedDate.setFullYear(inputDate.getFullYear() + yearDifference);
     advancedDate.setMonth(inputDate.getMonth() + monthDifference);
