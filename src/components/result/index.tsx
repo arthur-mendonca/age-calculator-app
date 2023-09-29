@@ -14,7 +14,6 @@ export const ResultContainer: FC<ResultsProps> = ({ dateDifference }) => {
       </div>
       <div className="numbers_wrapper" key="month">
         {month ? <p>{month} </p> : <p id="result_placeholder"> -- </p>}
-
         <p>months</p>
       </div>
       <div className="numbers_wrapper" key="day">
