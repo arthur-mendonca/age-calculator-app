@@ -45,7 +45,7 @@ export const Container: React.FC = () => {
   return (
     <div className="container">
       <Form
-        days={days}
+        day={days}
         month={months}
         year={years}
         setDay={setDay}

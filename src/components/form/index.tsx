@@ -1,6 +1,6 @@
 import "./style.css";
 import { Input } from "./inputs";
-import { FormProps, iUseFormProps, DateDifferenceProps } from "./interfaces";
+import { FormProps, iUseFormProps } from "./interfaces";
 import { Button } from "../button";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -23,7 +23,7 @@ export const Form: React.FC<FormProps> = ({
     formState: { errors },
   } = useForm<iUseFormProps>({ resolver: zodResolver(dateSchema) });
 
-  const onSubmit = (data: DateDifferenceProps) => {
+  const onSubmit = (data: iUseFormProps) => {
     const result = dateDifference(
       data.day + "/" + data.month + "/" + data.year
     );

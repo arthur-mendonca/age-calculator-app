@@ -1,4 +1,4 @@
-import { Dispatch, Ref, SetStateAction } from "react";
+import { Dispatch, SetStateAction } from "react";
 import { FieldError, UseFormRegisterReturn } from "react-hook-form";
 
 export interface InputsProps {
@@ -18,7 +18,13 @@ export interface FormProps {
   setDay: Dispatch<SetStateAction<string>>;
   setMonth: Dispatch<SetStateAction<string>>;
   setYear: Dispatch<SetStateAction<string>>;
-  setResult: Dispatch<SetStateAction<DateDifferenceProps> | null>;
+  setResult: React.Dispatch<
+    React.SetStateAction<{
+      day: number;
+      month: number;
+      year: number;
+    } | null>
+  >;
   dateDifference: (inputDateStr: string) => DateDifferenceProps;
 }
 
