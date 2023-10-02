@@ -2,6 +2,8 @@
 
 This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
+User may enter a date between 01.01.1900 and today and get the difference between the given data and today.
+
 ## Table of contents
 
 - [Overview](#overview)

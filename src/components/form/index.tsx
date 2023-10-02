@@ -19,7 +19,6 @@ export const Form: React.FC<FormProps> = ({
   const {
     register,
     handleSubmit,
-    setError,
     formState: { errors },
   } = useForm<iUseFormProps>({ resolver: zodResolver(dateSchema) });
 
@@ -42,7 +41,6 @@ export const Form: React.FC<FormProps> = ({
           type="day"
           errors={errors.day}
           onChange={(e) => setDay(e.target.value)}
-          setError={setError}
         />
         <Input
           label="MONTH"
@@ -52,7 +50,6 @@ export const Form: React.FC<FormProps> = ({
           type="text"
           errors={errors.month}
           onChange={(e) => setMonth(e.target.value)}
-          setError={setError}
         />
         <Input
           label="YEAR"
@@ -62,7 +59,6 @@ export const Form: React.FC<FormProps> = ({
           type="year"
           errors={errors.year}
           onChange={(e) => setYear(e.target.value, errors)}
-          setError={setError}
         />
       </div>
       <div className="button_wrapper">
