@@ -29,7 +29,6 @@ export const Form: React.FC<FormProps> = ({
 
     setResult(result);
   };
-  console.log(errors);
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className="inputs_wrapper">
