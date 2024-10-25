@@ -17,6 +17,7 @@ export const Input: FC<InputsProps> = ({
         {label}
       </label>
       <input
+        maxLength={type === "year" ? 4 : 2}
         type={type}
         placeholder={placeholder}
         value={value}
